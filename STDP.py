@@ -47,7 +47,7 @@ for i in range(1000):
 print(f)
 plt.figure(figsize=(10, 6))
 
-# Рисуем гистограмму. bins=20 означает, что мы разобьем ось X на 20 столбиков
+
 plt.hist(f, bins=200, color='royalblue', edgecolor='black', alpha=0.8)
 
 plt.title('Распределение весов одиночных синапсов после STDP', fontsize=14)
