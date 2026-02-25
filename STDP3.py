@@ -42,11 +42,9 @@ class neiron:
 def rand_make(inpp):
     while True:
         g = []
-        # Группа 1 (Половина синапсов): Активные. Вероятность спайка 15%
         for i in range(inpp // 2):
             g.append(1 if random.random() < 0.2 else 0)
 
-        # Группа 2 (Вторая половина): Фоновый шум. Вероятность спайка всего 2%
         for i in range(inpp // 2, inpp):
             g.append(1 if random.random() < 0.02 else 0)
         yield g
